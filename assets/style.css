@@ -2,33 +2,52 @@
 	margin:  0px;
 	padding:  0px;
 	box-sizing: border-box;
+	
 }
 
-/* adjusting fonts */
+@font-face {
+  font-family: CirrusCumulus;
+  src: url(fonts/CirrusCumulus.woff) ;
+}
+
+@font-face {
+  font-family: Ouvrieres;
+  src: url(fonts/Ouvrieres-affamees.woff) ;
+}
+
+@font-face {
+  font-family: Karrik;
+  src: url(fonts/Karrik-Regular.ttf) ;
+}
 
 body {
 	font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
 	transition: background 500ms ease;
+	background-color: hotpink;
 }
 
-p, li {
-	font-size:  22px;
+p{
+	font-size:  2vw;
 	line-height: 30px;
-}
-
-/* adjusting spacing */
-
-#left-column {
-	padding: 20px;
-}
-
-h1, p {
 	margin-bottom:  20px;
+	font-family: Karrik;
+border: 1px solid black;
+border-radius: 20px;
+text-align: center;
+background-color: red;
+color:white;
 }
 
-ul, ol {
-	margin-left: 20px;
+
+
+h1{
+	font-size:  3vw;
+	margin-bottom:  20px;
+font-family: Karrik;
+
 }
+
+
 
 img {
 	max-width: 100%;
@@ -37,23 +56,43 @@ img {
 
 /* uncomment the code below to set the grid */
 
-/*#grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-}
+
 
 body {
 	overflow: hidden;
+	display: grid;
+    align-items: center;
+    width: 100vw;
+    height:100vh;
+    grid-template-columns: 20vw auto;
+   
+
 }
 
-.scroll {
+.box {
+	padding:  2vw;
+	overflow: scroll;
+	width: 15vw;
+	height: 85vh;
+	background-color: white;
+	border-radius: 20px;
+	margin: 4vw;
+	border: 2px dotted black;
+}
+
+.box2 {
 	padding:  20px;
 	overflow: scroll;
-	height: 100vh;
+	width: 75vw;
+	height: 85vh;
+	background-color: white;
+	border-radius: 20px;
+	margin:1vw;
+	border: 2px dotted black;
 }
 
-#left-column {
-}
+
+
 
 #right-column {
 	background: #333;
