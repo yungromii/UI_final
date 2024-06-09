@@ -1,99 +1,242 @@
 * {
-	margin:  0px;
-	padding:  0px;
-	box-sizing: border-box;
-	
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 @font-face {
-  font-family: CirrusCumulus;
-  src: url(fonts/CirrusCumulus.woff) ;
+    font-family: Lineal;
+    src: url(fonts/LinealVF.ttf);
 }
 
 @font-face {
-  font-family: Ouvrieres;
-  src: url(fonts/Ouvrieres-affamees.woff) ;
+    font-family: CirrusCumulus;
+    src: url(fonts/CirrusCumulus.woff);
 }
 
 @font-face {
-  font-family: Karrik;
-  src: url(fonts/Karrik-Regular.ttf) ;
+    font-family: Ouvrieres;
+    src: url(fonts/Ouvrieres-affamees.woff);
+}
+
+@font-face {
+    font-family: Karrik;
+    src: url(fonts/Karrik-Regular.ttf);
 }
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
-	transition: background 500ms ease;
-	background-color: hotpink;
+    font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
+    transition: background 500ms ease;
+    background-color: hotpink;
 }
 
-p{
-	font-size:  2vw;
-	line-height: 30px;
-	margin-bottom:  20px;
-	font-family: Karrik;
-border: 1px solid black;
-border-radius: 20px;
-text-align: center;
-background-color: red;
-color:white;
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hotpink;
+    overflow: auto;
 }
 
-
-
-h1{
-	font-size:  3vw;
-	margin-bottom:  20px;
-font-family: Karrik;
-
+.container {
+    display: grid; 
+    grid-template-columns: minmax(180px, auto) minmax(540px, auto) minmax(620px, auto);
+    margin: 3%;
+    height: 95vh;
 }
 
-
-
-img {
-	max-width: 100%;
-	height:  auto;
+.sidebar {
 }
 
-/* uncomment the code below to set the grid */
+.left {
+    background: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    overflow: auto;
+    transition: width 0.5s ease;
+}
 
+.right {
+    display: flex;
+    flex-direction: column;
+}
 
-
-body {
-	overflow: hidden;
-	display: grid;
+.character {
+    background: blue;
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    padding: 15px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow: hidden;
     align-items: center;
-    width: 100vw;
-    height:100vh;
-    grid-template-columns: 20vw auto;
-   
+}
+
+.character img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+}
+
+.character-part {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none; /* To allow clicks to pass through to the mannequin */
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tab-link {
+    background: white;
+    text-align: center;
+    color: hotpink;
+    padding: 1%;
+    margin: 0 0.5%;
+    cursor: pointer;
+    font-family: Karrik;
+    font-size: 21px;
+    
+}
+
+.tab-link:hover {
+    color: hotpink;
+}
+
+.tab-content {
+    display: none;
+    padding: 25px 30px;
+    background-color: white;
+    overflow: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.tab-link.active {
+    background: red;
+    color: white; /* Active tab background color */
+    text-decoration: underline;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.sub-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; /* 텍스트 위로 이동하기 위해 하단 마진 추가 */
+}
+
+.sub-tab-link {
+    background: white;
+    color: hotpink;
+    padding: 1%;
+    margin: 0 0.5%;
+    cursor: pointer;
+    font-family: Karrik;
+    font-size: 18px;
+    border: 1px solid hotpink;
 
 }
 
-.box {
-	padding:  2vw;
-	overflow: scroll;
-	width: 15vw;
-	height: 85vh;
-	background-color: white;
-	border-radius: 20px;
-	margin: 4vw;
-	border: 2px dotted black;
+.sub-tab-content {
+    display: none;
+    padding: 15px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 5px grey;
 }
 
-.box2 {
-	padding:  20px;
-	overflow: scroll;
-	width: 75vw;
-	height: 85vh;
-	background-color: white;
-	border-radius: 20px;
-	margin:1vw;
-	border: 2px dotted black;
+.sub-tab-link.active {
+    background: hotpink;
+    color: white;
 }
 
+.sub-tab-content.active {
+    display: block;
+}
 
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
 
+.option {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 10px;
+}
 
-#right-column {
-	background: #333;
-}*/
+.logo {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 3vh;
+    font-family: Karrik;
+}
+
+#reset-button {
+    display: block;
+    margin: 20px auto;
+    padding: 1%;
+    font-size: 36px;
+    border-radius: 18px;
+    border: 2px solid black;
+    background: red;
+    font-family: Karrik;
+    cursor: pointer;
+}
+
+.option.selected {
+    box-shadow: 8px 8px 8px grey;
+}
+
+.properties {
+    padding: 25px 30px;
+    color: black;
+    background: white;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.select {
+    box-shadow: 5px 5px 5px hotpink;
+    margin-bottom: 2%;
+}
+
+button {
+    border: none; /* 테두리 제거 */
+}
+
+.subtitle {
+    font-size: 24px;
+    line-height: 1.4em;
+    margin-bottom: 1.2em;
+    font-weight: bold;
+    font-family: Karrik;
+}
+
+.guide {
+    line-height: 1.4em;
+    font-size: 20px;
+    font-family: Karrik;
+}
