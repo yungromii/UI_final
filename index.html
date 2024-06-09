@@ -5,6 +5,8 @@
   <link rel="stylesheet" type="text/css" href="assets/style.css">
   <title>Yungkyung Lee | UI Design Programming 1</title>
   <meta charset="utf-8" />
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
+
 </head>
 
 <body>
@@ -13,8 +15,9 @@
     <div class="sidebar left" id="sidebar-left">
         <div class="logo">ROMI WORLD</div>
         <div class='subtitle'>Character Dress-UP Game</div>
-        <div class='guide'>Try to make your own outfit - with traditional attire from of ETHNIC MINORITIES (relatively, but mostly NON-WESTERN cultures) you may not be familiar with. </div>
+        <div class='guide'>ssssss </div>
         <button id="reset-button">RESET</button>
+        <button id="save-button">SAVE</button>
     </div>
    
     <div class="character">
@@ -55,15 +58,12 @@
 
             <div class="sub-tab-content" id="tattoo">
                 <div class="options">
-                    
                     <img src="assets/PIC/Cskin/T2.png" alt="T 2" class="option" data-type="base" data-subtype="tattoo" data-character-src="assets/PIC/Cskin/T2.png">
                 </div>
             </div>
 
             <div class="sub-tab-content" id="eyes">
-
                 <div class="options">
-                    
                     <img src="assets/1PIC/skin/eyes1.png" alt="Eyes 1" class="option" data-type="base" data-subtype="eyes" data-character-src="assets/PIC/Cskin/eyes1.png">
                     <img src="assets/1PIC/skin/eyes2.png" alt="Eyes 1" class="option" data-type="base" data-subtype="eyes" data-character-src="assets/PIC/Cskin/eyes2.png">
                     <img src="assets/1PIC/skin/eyes7.png" alt="Eyes 1" class="option" data-type="base" data-subtype="eyes" data-character-src="assets/PIC/Cskin/eyes7.png">
@@ -75,402 +75,380 @@
                 </div>
             </div>
 
-       
-
         </div>
 
-            <div class="tab-content" id="hair">
-                <div class="sub-tabs">
-                    <button class="sub-tab-link active" data-subtab="black">black</button>
-                    <button class="sub-tab-link" data-subtab="white">white</button>
-                    <button class="sub-tab-link" data-subtab="blond">blond</button>   
-                    <button class="sub-tab-link" data-subtab="brown">brown</button> 
-                    <button class="sub-tab-link" data-subtab="magenta">magenta</button> 
-                    <button class="sub-tab-link" data-subtab="blue">blue</button> 
-                    <button class="sub-tab-link" data-subtab="more.hair">more</button> 
-                </div>
+        <div class="tab-content" id="hair">
+            <div class="sub-tabs">
+                <button class="sub-tab-link active" data-subtab="black">black</button>
+                <button class="sub-tab-link" data-subtab="white">white</button>
+                <button class="sub-tab-link" data-subtab="blond">blond</button>   
+                <button class="sub-tab-link" data-subtab="brown">brown</button> 
+                <button class="sub-tab-link" data-subtab="magenta">magenta</button> 
+                <button class="sub-tab-link" data-subtab="blue">blue</button> 
+                <button class="sub-tab-link" data-subtab="more.hair">more</button> 
+            </div>
 
-                <div class="sub-tab-content active" id="black">
+            <div class="sub-tab-content active" id="black">
                 <div class="options">
                     <img src="assets/1PIC/hair/Hair8.png" alt="Hair 8" class="option" data-type="hair" data-subtype="black" data-character-src="assets/PIC/hair/Hair8.png">
                     <img src="assets/1PIC/hair/Hair11.png" alt="Hair 11" class="option" data-type="hair" data-subtype="black" data-character-src="assets/PIC/hair/Hair11.png">
                     <img src="assets/1PIC/hair/Hair16.png" alt="Hair 16" class="option" data-type="hair" data-subtype="black" data-character-src="assets/PIC/hair/Hair16.png">
                     <img src="assets/1PIC/hair/Hair21.png" alt="Hair 21" class="option" data-type="hair" data-subtype="black" data-character-src="assets/PIC/hair/Hair21.png">
-                    <img src="assets/1PIC/hair/Hair27.png" alt="Hair 27" class="option" data-type="hair" data-subtype="black" data-character-src="assets/PIC/hair/Hair27.png">
-                     </div>
+                    <img src="assets/1PIC/hair/Hair27.png" alt="Hair 27" class="option" data-type="hair" data-subtype="black" data-character-src="assets/PIC/hair/Hair27.png" data-description="This is a description for Hair 27.">
                 </div>
+            </div>
 
-                <div class="sub-tab-content" id="white">
+            <div class="sub-tab-content" id="white">
                 <div class="options">
                     <img src="assets/1PIC/hair/Hair12.png" alt="Hair 12" class="option" data-type="hair" data-subtype="white" data-character-src="assets/PIC/hair/Hair12.png">
                     <img src="assets/1PIC/hair/Hair22.png" alt="Hair 22" class="option" data-type="hair" data-subtype="white" data-character-src="assets/PIC/hair/Hair22.png">
                     <img src="assets/1PIC/hair/Hair24.png" alt="Hair 24" class="option" data-type="hair" data-subtype="white" data-character-src="assets/PIC/hair/Hair24.png">
-                     </div>
                 </div>
+            </div>
 
-                 <div class="sub-tab-content" id="blond">
+            <div class="sub-tab-content" id="blond">
                 <div class="options">
                     <img src="assets/1PIC/hair/Hair3.png" alt="Hair 3" class="option" data-type="hair" data-subtype="blond" data-character-src="assets/PIC/hair/Hair3.png">
                     <img src="assets/1PIC/hair/Hair4.png" alt="Hair 4" class="option" data-type="hair" data-subtype="blond" data-character-src="assets/PIC/hair/Hair4.png">
                     <img src="assets/1PIC/hair/Hair7.png" alt="Hair 7" class="option" data-type="hair" data-subtype="blond" data-character-src="assets/PIC/hair/Hair7.png">
-                     </div>
                 </div>
+            </div>
 
-                 <div class="sub-tab-content" id="brown">
+            <div class="sub-tab-content" id="brown">
                 <div class="options">
                     <img src="assets/1PIC/hair/Hair1.png" alt="Hair 1" class="option" data-type="hair" data-subtype="brown" data-character-src="assets/PIC/hair/Hair1.png">
                     <img src="assets/1PIC/hair/Hair9.png" alt="Hair 9" class="option" data-type="hair" data-subtype="brown" data-character-src="assets/PIC/hair/Hair9.png">
                     <img src="assets/1PIC/hair/Hair18.png" alt="Hair 18" class="option" data-type="hair" data-subtype="brown" data-character-src="assets/PIC/hair/Hair18.png">
                     <img src="assets/1PIC/hair/Hair25.png" alt="Hair 25" class="option" data-type="hair" data-subtype="brown" data-character-src="assets/PIC/hair/Hair25.png">
                     <img src="assets/1PIC/hair/Hair28.png" alt="Hair 28" class="option" data-type="hair" data-subtype="brown" data-character-src="assets/PIC/hair/Hair28.png">
-                     </div>
                 </div>
+            </div>
 
-                <div class="sub-tab-content" id="magenta">
+            <div class="sub-tab-content" id="magenta">
                 <div class="options">
                     <img src="assets/1PIC/hair/Hair10.png" alt="Hair 10" class="option" data-type="hair" data-subtype="magenta" data-character-src="assets/PIC/hair/Hair10.png">
                     <img src="assets/1PIC/hair/Hair13.png" alt="Hair 13" class="option" data-type="hair" data-subtype="magenta" data-character-src="assets/PIC/hair/Hair13.png">
                     <img src="assets/1PIC/hair/Hair20.png" alt="Hair 20" class="option" data-type="hair" data-subtype="magenta" data-character-src="assets/PIC/hair/Hair20.png">
                     <img src="assets/1PIC/hair/Hair23.png" alt="Hair 23" class="option" data-type="hair" data-subtype="magenta" data-character-src="assets/PIC/hair/Hair23.png">
                     <img src="assets/1PIC/hair/Hair26.png" alt="Hair 26" class="option" data-type="hair" data-subtype="magenta" data-character-src="assets/PIC/hair/Hair26.png">
-                     </div>
                 </div>
+            </div>
 
-                <div class="sub-tab-content" id="blue">
+            <div class="sub-tab-content" id="blue">
                 <div class="options">
                     <img src="assets/1PIC/hair/Hair2.png" alt="Hair 2" class="option" data-type="hair" data-subtype="blue" data-character-src="assets/PIC/hair/Hair2.png">
                     <img src="assets/1PIC/hair/Hair14.png" alt="Hair 14" class="option" data-type="hair" data-subtype="blue" data-character-src="assets/PIC/hair/Hair14.png">
                     <img src="assets/1PIC/hair/Hair15.png" alt="Hair 15" class="option" data-type="hair" data-subtype="blue" data-character-src="assets/PIC/hair/Hair15.png">
                     <img src="assets/1PIC/hair/Hair19.png" alt="Hair 19" class="option" data-type="hair" data-subtype="blue" data-character-src="assets/PIC/hair/Hair19.png">
-                    
-                     </div>
                 </div>
+            </div>
 
-                <div class="sub-tab-content" id="more.hair">
+            <div class="sub-tab-content" id="more.hair">
                 <div class="options">
-                    <img src="assets/1PIC/hair/KUP1.png" alt="KUP 1" class="option" data-type="hair" data-subtype="more.hair" data-character-src="assets/PIC/hair/KUP1.png">
-                    <img src="assets/1PIC/hair/KUP2.png" alt="KUP 2" class="option" data-type="hair" data-subtype="more.hair" data-character-src="assets/PIC/hair/KUP2.png">
-                    <img src="assets/1PIC/hair/KUP3.png" alt="KUP 3" class="option" data-type="hair" data-subtype="more.hair" data-character-src="assets/PIC/hair/KUP3.png">
-                    <img src="assets/1PIC/hair/KUP4.png" alt="KUP 4" class="option" data-type="hair" data-subtype="more.hair" data-character-src="assets/PIC/hair/KUP4.png">
-                     </div>
-                </div>
+                    <img src="assets/1PIC/hair/KUP1.png" alt="KUP 1" class="option" data-type="hair" data-subtype="more.hair" data-character-src="assets/PIC/hair/KUP1.png" data-description="<h2>Palestinian keffiyeh</h2><h3>-Symbol of Palestinian solidarity</h3><h3>-What does the Palestinian keffiyeh symbolize?</h3><p><i>...The patterns on the Palestinian keffiyeh symbolize various themes:</i></p><p><b>Olive leaves</b> Strength, resilience, perseverance.</p><p><b>Fishnet</b> Connection between Palestinian sailors and the Mediterranean Sea.</p><p><b>Bold lines</b> Trade routes going through Palestine, including the Silk Road.</p>">
 
+
+                    <img src="assets/1PIC/hair/KUP2.png" alt="KUP 2" class="option" data-type="hair" data-subtype="more.hair" data-character-src="assets/PIC/hair/KUP2.png" data-description="This is a description for KUP 2.">
+
+
+                    <img src="assets/1PIC/hair/KUP3.png" alt="KUP 3" class="option" data-type="hair" data-subtype="more.hair" data-character-src="assets/PIC/hair/KUP3.png" data-description="This is a description for KUP 3.">
+
+
+                    <img src="assets/1PIC/hair/KUP4.png" alt="KUP 4" class="option" data-type="hair" data-subtype="more.hair" data-character-src="assets/PIC/hair/KUP4.png" data-description="This is a description for KUP 4.">
+                </div>
             </div>
 
-            <div class="tab-content" id="top">
+        </div>
 
-                <div class="sub-tabs">
-                    <button class="sub-tab-link active" data-subtab="sleeveless">sleeveless</button>
-                    <button class="sub-tab-link" data-subtab="halfsleeve">halfsleeve</button>
-                    <button class="sub-tab-link" data-subtab="longsleeve">longsleeve</button>   
-                    <button class="sub-tab-link" data-subtab="hooded">hooded</button>
-                    <button class="sub-tab-link" data-subtab="onepiece">onepiece</button>
-                </div>
-
-                        <div class="sub-tab-content active" id="sleeveless">
-    <div class="options">
-        <img src="assets/1PIC/top/top3.png" alt="Top 3" class="option" data-type="top" data-subtype="sleeveless" data-character-src="assets/PIC/top/top3.png">
-        <img src="assets/1PIC/top/top7.png" alt="Top 7" class="option" data-type="top" data-subtype="sleeveless" data-character-src="assets/PIC/top/top7.png">
-        <img src="assets/1PIC/top/top8.png" alt="Top 8" class="option" data-type="top" data-subtype="sleeveless" data-character-src="assets/PIC/top/top8.png">
-        <img src="assets/1PIC/top/top14.png" alt="Top 14" class="option" data-type="top" data-subtype="sleeveless" data-character-src="assets/PIC/top/top14.png">
-        <img src="assets/1PIC/top/top18.png" alt="Top 18" class="option" data-type="top" data-subtype="sleeveless" data-character-src="assets/PIC/top/top18.png">
-        <img src="assets/1PIC/top/top19.png" alt="Top 19" class="option" data-type="top" data-subtype="sleeveless" data-character-src="assets/PIC/top/top19.png">
-        <img src="assets/1PIC/top/top20.png" alt="Top 20" class="option" data-type="top" data-subtype="sleeveless" data-character-src="assets/PIC/top/top20.png">
-        <img src="assets/1PIC/top/top21.png" alt="Top 21" class="option" data-type="top" data-subtype="sleeveless" data-character-src="assets/PIC/top/top21.png">
-        <img src="assets/1PIC/top/top22.png" alt="Top 22" class="option" data-type="top" data-subtype="sleeveless" data-character-src="assets/PIC/top/top22.png">
-    </div>
-</div>
-
-<div class="sub-tab-content" id="halfsleeve">
-    <div class="options">
-        <img src="assets/1PIC/top/top1.png" alt="Top 1" class="option" data-type="top" data-subtype="halfsleeve" data-character-src="assets/PIC/top/top1.png">
-        <img src="assets/1PIC/top/top2.png" alt="Top 2" class="option" data-type="top" data-subtype="halfsleeve" data-character-src="assets/PIC/top/top2.png">
-        <img src="assets/1PIC/top/top6.png" alt="Top 6" class="option" data-type="top" data-subtype="halfsleeve" data-character-src="assets/PIC/top/top6.png">
-        <img src="assets/1PIC/top/top10.png" alt="Top 10" class="option" data-type="top" data-subtype="halfsleeve" data-character-src="assets/PIC/top/top10.png">
-        <img src="assets/1PIC/top/top11.png" alt="Top 11" class="option" data-type="top" data-subtype="halfsleeve" data-character-src="assets/PIC/top/top11.png">
-        <img src="assets/1PIC/top/top12.png" alt="Top 12" class="option" data-type="top" data-subtype="halfsleeve" data-character-src="assets/PIC/top/top12.png">
-        <img src="assets/1PIC/top/top13.png" alt="Top 13" class="option" data-type="top" data-subtype="halfsleeve" data-character-src="assets/PIC/top/top13.png">
-         <img src="assets/1PIC/top/top27.png" alt="Top 27" class="option" data-type="top" data-subtype="halfsleeve" data-character-src="assets/PIC/top/top27.png">
-         <img src="assets/1PIC/top/miy2.png" alt="Miy 2" class="option" data-type="top" data-subtype="halfsleeve" data-character-src="assets/PIC/top/miy2.png">
-         <img src="assets/1PIC/top/miy3.png" alt="Miy 3" class="option" data-type="top" data-subtype="halfsleeve" data-character-src="assets/PIC/top/miy3.png">
-    </div>
-</div>
-
-<div class="sub-tab-content" id="longsleeve">
-    <div class="options">
-        <img src="assets/1PIC/top/top4.png" alt="Top 4" class="option" data-type="top" data-subtype="longsleeve" data-character-src="assets/PIC/top/top4.png">
-        <img src="assets/1PIC/top/top15.png" alt="Top 15" class="option" data-type="top" data-subtype="longsleeve" data-character-src="assets/PIC/top/top15.png">
-        <img src="assets/1PIC/top/top16.png" alt="Top 16" class="option" data-type="top" data-subtype="longsleeve" data-character-src="assets/PIC/top/top16.png">
-        <img src="assets/1PIC/top/top17.png" alt="Top 17" class="option" data-type="top" data-subtype="longsleeve" data-character-src="assets/PIC/top/top17.png">
-        <img src="assets/1PIC/top/ukr1.png" alt="Ukr 1" class="option" data-type="top" data-subtype="longsleeve" data-character-src="assets/PIC/top/ukr1.png">
-    </div>
-</div>
-
-<div class="sub-tab-content" id="hooded">
-    <div class="options">
-        <img src="assets/1PIC/top/top5.png" alt="Top 5" class="option" data-type="top" data-subtype="hooded" data-character-src="assets/PIC/top/top5.png">
-        <img src="assets/1PIC/top/top23.png" alt="Top 23" class="option" data-type="top" data-subtype="hooded" data-character-src="assets/PIC/top/top23.png">
-        <img src="assets/1PIC/top/top24.png" alt="Top 24" class="option" data-type="top" data-subtype="hooded" data-character-src="assets/PIC/top/top24.png">
-        <img src="assets/1PIC/top/top25.png" alt="Top 25" class="option" data-type="top" data-subtype="hooded" data-character-src="assets/PIC/top/top25.png">
-        <img src="assets/1PIC/top/top26.png" alt="Top 26" class="option" data-type="top" data-subtype="hooded" data-character-src="assets/PIC/top/top26.png">
-    </div>
-</div>
-
-<div class="sub-tab-content" id="onepiece">
-    <div class="options">
-        <img src="assets/1PIC/top/viet1.png" alt="viet1" class="option" data-type="top" data-subtype="onepiece" data-character-src="assets/PIC/top/viet1.png">
-        <img src="assets/1PIC/top/viet2.png" alt="viet2" class="option" data-type="top" data-subtype="onepiece" data-character-src="assets/PIC/top/viet2.png">
-        <img src="assets/1PIC/top/ind1.png" alt="ind1" class="option" data-type="top" data-subtype="onepiece" data-character-src="assets/PIC/top/ind1.png">
-        <img src="assets/1PIC/top/ind2.png" alt="ind2" class="option" data-type="top" data-subtype="onepiece" data-character-src="assets/PIC/top/ind2.png">
-        
-    </div>
-</div>
-                
-
-
-
-
-
-
+        <div class="tab-content" id="top">
+            <div class="sub-tabs">
+                <button class="sub-tab-link active" data-subtab="sleeveless">sleeveless</button>
+                <button class="sub-tab-link" data-subtab="halfsleeve">halfsleeve</button>
+                <button class="sub-tab-link" data-subtab="longsleeve">longsleeve</button>   
+                <button class="sub-tab-link" data-subtab="hooded">hooded</button>
+                <button class="sub-tab-link" data-subtab="onepiece">onepiece</button>
             </div>
 
-            <div class="tab-content" id="bottom">
-                <div class="sub-tabs">
-                    <button class="sub-tab-link active" data-subtab="skirt">Skirt</button>
-                    <button class="sub-tab-link" data-subtab="pants">Pants</button>
-                    <button class="sub-tab-link" data-subtab="shorts">Shorts</button>
-                    <button class="sub-tab-link" data-subtab="leggings">Leggings</button>
-                </div>
-                <div class="sub-tab-content active" id="skirt">
-                    <div class="options">
-                        <img src="assets/1PIC/bottom/S1.png" alt="Skirt 1" class="option" data-type="bottom" data-subtype="skirt" data-character-src="assets/PIC/bottom/S1.png">
-                        <img src="assets/1PIC/bottom/S2.png" alt="Skirt 1" class="option" data-type="bottom" data-subtype="skirt" data-character-src="assets/PIC/bottom/S2.png">
-                        <img src="assets/1PIC/bottom/S3.png" alt="Skirt 1" class="option" data-type="bottom" data-subtype="skirt" data-character-src="assets/PIC/bottom/S3.png">
-                        <img src="assets/1PIC/bottom/S4.png" alt="Skirt 1" class="option" data-type="bottom" data-subtype="skirt" data-character-src="assets/PIC/bottom/S4.png">
-                        <img src="assets/1PIC/bottom/S5.png" alt="Skirt 1" class="option" data-type="bottom" data-subtype="skirt" data-character-src="assets/PIC/bottom/S5.png">
-                        <img src="assets/1PIC/bottom/MIY1.png" alt="MIY 1" class="option" data-type="bottom" data-subtype="skirt" data-character-src="assets/PIC/bottom/MIY1.png">
-                        <img src="assets/1PIC/bottom/MIY2.png" alt="MIY 2" class="option" data-type="bottom" data-subtype="skirt" data-character-src="assets/PIC/bottom/MIY2.png">
-                        <img src="assets/1PIC/bottom/MIY3.png" alt="MIY 3" class="option" data-type="bottom" data-subtype="skirt" data-character-src="assets/PIC/bottom/MIY3.png">
-                        <img src="assets/1PIC/bottom/KELT1.png" alt="KELT 1" class="option" data-type="bottom" data-subtype="skirt" data-character-src="assets/PIC/bottom/KELT1.png">
-                        <img src="assets/1PIC/bottom/KELT2.png" alt="KELT 2" class="option" data-type="bottom" data-subtype="skirt" data-character-src="assets/PIC/bottom/KELT2.png">
-                        <!-- 더 많은 스커트 옵션 -->
-                    </div>
-                </div>
-
-                <div class="sub-tab-content" id="pants">
-                    <div class="options">
-                        <img src="assets/1PIC/bottom/P1.png" alt="Pants 1" class="option" data-type="bottom" data-subtype="pants" data-character-src="assets/PIC/bottom/P1.png">
-                        <img src="assets/1PIC/bottom/P2.png" alt="Pants 2" class="option" data-type="bottom" data-subtype="pants" data-character-src="assets/PIC/bottom/P2.png">
-                        <img src="assets/1PIC/bottom/P3.png" alt="Pants 2" class="option" data-type="bottom" data-subtype="pants" data-character-src="assets/PIC/bottom/P3.png">
-                    </div>
-                </div>
-
-
-               <div class="sub-tab-content" id="shorts">
-    <div class="options">
-        <img src="assets/1PIC/bottom/PS1.png" alt="Shorts 1" class="option" data-type="bottom" data-subtype="shorts" data-character-src="assets/PIC/bottom/PS1.png">
-        <img src="assets/1PIC/bottom/PS2.png" alt="Shorts 2" class="option" data-type="bottom" data-subtype="shorts" data-character-src="assets/PIC/bottom/PS2.png">
-        <img src="assets/1PIC/bottom/PS3.png" alt="Shorts 3" class="option" data-type="bottom" data-subtype="shorts" data-character-src="assets/PIC/bottom/PS3.png">
-        <img src="assets/1PIC/bottom/PS4.png" alt="Shorts 4" class="option" data-type="bottom" data-subtype="shorts" data-character-src="assets/PIC/bottom/PS4.png">
-        <img src="assets/1PIC/bottom/PS5.png" alt="Shorts 5" class="option" data-type="bottom" data-subtype="shorts" data-character-src="assets/PIC/bottom/PS5.png">
-        <img src="assets/1PIC/bottom/PS6.png" alt="Shorts 6" class="option" data-type="bottom" data-subtype="shorts" data-character-src="assets/PIC/bottom/PS6.png">
-    </div>
-</div>
-
-
-                <div class="sub-tab-content" id="leggings">
-    <div class="options">
-       
-
-        <img src="assets/1PIC/bottom/L2.png" alt="Leggings 2" class="option" data-type="bottom" data-subtype="leggings" data-character-src="assets/PIC/bottom/L2.png">
-        <img src="assets/1PIC/bottom/L3.png" alt="Leggings 3" class="option" data-type="bottom" data-subtype="leggings" data-character-src="assets/PIC/bottom/L3.png">
-        <img src="assets/1PIC/bottom/L4.png" alt="Leggings 4" class="option" data-type="bottom" data-subtype="leggings" data-character-src="assets/PIC/bottom/L4.png">
-        <img src="assets/1PIC/bottom/L5.png" alt="Leggings 5" class="option" data-type="bottom" data-subtype="leggings" data-character-src="assets/PIC/bottom/L5.png">
-        <img src="assets/1PIC/bottom/L6.png" alt="Leggings 6" class="option" data-type="bottom" data-subtype="leggings" data-character-src="assets/PIC/bottom/L6.png">
-    </div>
-</div>
-
-
-            </div>
-
-            <div class="tab-content" id="outer">
-               <div class="sub-tabs">
-                    <button class="sub-tab-link active" data-subtab="leather">Leather</button>
-                    <button class="sub-tab-link" data-subtab="knit">Knit</button>
-                    <button class="sub-tab-link" data-subtab="fur">Fur</button>
-                    <button class="sub-tab-link" data-subtab="etc2">Etc</button>
-                </div>
-
-                <div class="sub-tab-content active" id="leather">
-    <div class="options">
-        <img src="assets/1PIC/outer/outer3.png" alt="Outer 3" class="option" data-type="outer" data-subtype="leather" data-character-src="assets/PIC/outer/outer3.png">
-        <img src="assets/1PIC/outer/outer18.png" alt="Outer 18" class="option" data-type="outer" data-subtype="leather" data-character-src="assets/PIC/outer/outer18.png">
-        <img src="assets/1PIC/outer/outer19.png" alt="Outer 19" class="option" data-type="outer" data-subtype="leather" data-character-src="assets/PIC/outer/outer19.png">
-    </div>
-</div>
-
-<div class="sub-tab-content" id="fur">
-    <div class="options">
-        <img src="assets/1PIC/outer/outer2.png" alt="Outer 2" class="option" data-type="outer" data-subtype="fur" data-character-src="assets/PIC/outer/outer2.png">
-        <img src="assets/1PIC/outer/outer4.png" alt="Outer 4" class="option" data-type="outer" data-subtype="fur" data-character-src="assets/PIC/outer/outer4.png">
-        <img src="assets/1PIC/outer/outer15.png" alt="Outer 15" class="option" data-type="outer" data-subtype="fur" data-character-src="assets/PIC/outer/outer15.png">
-        <img src="assets/1PIC/outer/outer16.png" alt="Outer 16" class="option" data-type="outer" data-subtype="fur" data-character-src="assets/PIC/outer/outer16.png">
-        <img src="assets/1PIC/outer/outer17.png" alt="Outer 17" class="option" data-type="outer" data-subtype="fur" data-character-src="assets/PIC/outer/outer17.png">
-    </div>
-</div>
-
-<div class="sub-tab-content" id="knit">
-    <div class="options">
-        <img src="assets/1PIC/outer/outer1.png" alt="Outer 1" class="option" data-type="outer" data-subtype="knit" data-character-src="assets/PIC/outer/outer1.png">
-        <img src="assets/1PIC/outer/outer5.png" alt="Outer 5" class="option" data-type="outer" data-subtype="knit" data-character-src="assets/PIC/outer/outer5.png">
-        <img src="assets/1PIC/outer/outer7.png" alt="Outer 7" class="option" data-type="outer" data-subtype="knit" data-character-src="assets/PIC/outer/outer7.png">
-        <img src="assets/1PIC/outer/outer8.png" alt="Outer 8" class="option" data-type="outer" data-subtype="knit" data-character-src="assets/PIC/outer/outer8.png">
-        <img src="assets/1PIC/outer/outer9.png" alt="Outer 9" class="option" data-type="outer" data-subtype="knit" data-character-src="assets/PIC/outer/outer9.png">
-        <img src="assets/1PIC/outer/outer10.png" alt="Outer 10" class="option" data-type="outer" data-subtype="knit" data-character-src="assets/PIC/outer/outer10.png">
-        <img src="assets/1PIC/outer/outer11.png" alt="Outer 11" class="option" data-type="outer" data-subtype="knit" data-character-src="assets/PIC/outer/outer11.png">
-        <img src="assets/1PIC/outer/outer12.png" alt="Outer 12" class="option" data-type="outer" data-subtype="knit" data-character-src="assets/PIC/outer/outer12.png">
-        <img src="assets/1PIC/outer/outer13.png" alt="Outer 13" class="option" data-type="outer" data-subtype="knit" data-character-src="assets/PIC/outer/outer13.png">
-        <img src="assets/1PIC/outer/outer14.png" alt="Outer 14" class="option" data-type="outer" data-subtype="knit" data-character-src="assets/PIC/outer/outer14.png">
-    </div>
-</div>
-
-<div class="sub-tab-content" id="etc2">
-    <div class="options">
-        <img src="assets/1PIC/outer/outer6.png" alt="Outer 6" class="option" data-type="outer" data-subtype="etc2" data-character-src="assets/PIC/outer/outer6.png">
-       
-    </div>
-</div>
-
-
-
-
-
-
-            </div>
-
-            <div class="tab-content" id="acc">
-                <div class="sub-tabs">
-                    <button class="sub-tab-link active" data-subtab="necklace">necklace</button>
-                    <button class="sub-tab-link" data-subtab="ring/bracelet">ring/bracelet</button>
-                    <button class="sub-tab-link" data-subtab="glasses">glasses</button>
-                    <button class="sub-tab-link" data-subtab="bag">Bag</button>
-                    <button class="sub-tab-link" data-subtab="hat">Hat</button>
-                    <button class="sub-tab-link" data-subtab="socks">socks</button>  
-                    <button class="sub-tab-link" data-subtab="etc">Etc</button>
-                </div>
-                <div class="sub-tab-content active" id="necklace">
-                    <div class="options">
-                        <img src="assets/1PIC/acc/J1.png" alt="Acc 1" class="option" data-type="acc" data-subtype="necklace" data-character-src="assets/PIC/acc/J1.png">
-                        <img src="assets/1PIC/acc/J2.png" alt="Acc 2" class="option" data-type="acc" data-subtype="necklace" data-character-src="assets/PIC/acc/J2.png">
-                        <img src="assets/1PIC/acc/J3.png" alt="Acc 3" class="option" data-type="acc" data-subtype="necklace" data-character-src="assets/PIC/acc/J3.png">
-                        <img src="assets/1PIC/acc/J4.png" alt="Acc 4" class="option" data-type="acc" data-subtype="necklace" data-character-src="assets/PIC/acc/J4.png">
-                        <img src="assets/1PIC/acc/J5.png" alt="Acc 5" class="option" data-type="acc" data-subtype="necklace" data-character-src="assets/PIC/acc/J5.png">
-                        <img src="assets/1PIC/acc/J6.png" alt="Acc 6" class="option" data-type="acc" data-subtype="necklace" data-character-src="assets/PIC/acc/J6.png">
-                        <img src="assets/1PIC/acc/J7.png" alt="Acc 7" class="option" data-type="acc" data-subtype="necklace" data-character-src="assets/PIC/acc/J7.png">
-                        <img src="assets/1PIC/acc/J8.png" alt="Acc 8" class="option" data-type="acc" data-subtype="necklace" data-character-src="assets/PIC/acc/J8.png">
-                        <img src="assets/1PIC/acc/J9.png" alt="Acc 9" class="option" data-type="acc" data-subtype="necklace" data-character-src="assets/PIC/acc/J9.png">
-                    </div>
-                </div>
-
-                <div class="sub-tab-content" id="ring/bracelet">
-                    <div class="options">
-                        <img src="assets/1PIC/acc/R1.png" alt="R 1" class="option" data-type="acc" data-subtype="ring/bracelet" data-character-src="assets/PIC/acc/R1.png">
-                        <img src="assets/1PIC/acc/R2.png" alt="R 2" class="option" data-type="acc" data-subtype="ring/bracelet" data-character-src="assets/PIC/acc/R2.png">
-                        <img src="assets/1PIC/acc/R3.png" alt="R 3" class="option" data-type="acc" data-subtype="ring/bracelet" data-character-src="assets/PIC/acc/R3.png">
-                        <img src="assets/1PIC/acc/R4.png" alt="R 4" class="option" data-type="acc" data-subtype="ring/bracelet" data-character-src="assets/PIC/acc/R4.png">
-                        <img src="assets/1PIC/acc/R5.png" alt="R 5" class="option" data-type="acc" data-subtype="ring/bracelet" data-character-src="assets/PIC/acc/R5.png">
-                    </div>
-                 </div>
-
-                
-
-                <div class="sub-tab-content" id="glasses">
-                    <div class="options">
-                        <img src="assets/1PIC/acc/G1.png" alt="G 1" class="option" data-type="acc" data-subtype="glasses" data-character-src="assets/PIC/acc/G1.png">
-                        <img src="assets/1PIC/acc/G2.png" alt="G 2" class="option" data-type="acc" data-subtype="glasses" data-character-src="assets/PIC/acc/G2.png">
-                        <img src="assets/1PIC/acc/G3.png" alt="G 3" class="option" data-type="acc" data-subtype="glasses" data-character-src="assets/PIC/acc/G3.png">
-                        <img src="assets/1PIC/acc/G4.png" alt="G 4" class="option" data-type="acc" data-subtype="glasses" data-character-src="assets/PIC/acc/G4.png">
-                        
-                    </div>
-                </div>
-
-                <div class="sub-tab-content" id="bag">
-                    <div class="options">
-                        <img src="assets/1PIC/acc/B1.png" alt="B 1" class="option" data-type="acc" data-subtype="bag" data-character-src="assets/PIC/acc/B1.png">
-                        <img src="assets/1PIC/acc/B2.png" alt="B 2" class="option" data-type="acc" data-subtype="bag" data-character-src="assets/PIC/acc/B2.png">
-                        <img src="assets/1PIC/acc/B3.6.png" alt="B 3" class="option" data-type="acc" data-subtype="bag" data-character-src="assets/PIC/acc/B3.png">
-                        <!-- 더 많은 acc2 옵션 -->
-                    </div>
-                </div>
-
-                <div class="sub-tab-content" id="hat">
-                    <div class="options">
-                        <img src="assets/1PIC/acc/hat/Hat1.png" alt="Hat 1" class="option" data-type="acc" data-subtype="hat" data-character-src="assets/PIC/acc/hat/Hat1.png">
-                        <img src="assets/1PIC/acc/hat/Hat2.png" alt="Hat 2" class="option" data-type="acc" data-subtype="hat" data-character-src="assets/PIC/acc/hat/Hat2.png">
-                        <img src="assets/1PIC/acc/hat/Hat3.png" alt="Hat 3" class="option" data-type="acc" data-subtype="hat" data-character-src="assets/PIC/acc/hat/Hat3.png">
-                        <img src="assets/1PIC/acc/hat/Hat4.png" alt="Hat 4" class="option" data-type="acc" data-subtype="hat" data-character-src="assets/PIC/acc/hat/Hat4.png">
-                        
-                        
-                        <img src="assets/1PIC/acc/hat/MEX1.png" alt="MEX 1" class="option" data-type="acc" data-subtype="hat" data-character-src="assets/PIC/acc/hat/MEX1.png">
-                        <img src="assets/1PIC/acc/hat/MEX2.png" alt="MEX 2" class="option" data-type="acc" data-subtype="hat" data-character-src="assets/PIC/acc/hat/MEX2.png">
-                        <img src="assets/1PIC/acc/hat/MEX3.png" alt="MEX 3" class="option" data-type="acc" data-subtype="hat" data-character-src="assets/PIC/acc/hat/MEX3.png">
-                        <img src="assets/1PIC/acc/hat/VIET1.png" alt="VIET 1" class="option" data-type="acc" data-subtype="hat" data-character-src="assets/PIC/acc/hat/VIET1.png">
-
-                        <!-- 더 많은 hat 옵션 -->
-                    </div>
-                </div>
-
-                <div class="sub-tab-content" id="socks">
-    <div class="options">
-        <img src="assets/PIC/acc/S1.png" alt="S 1" class="option" data-type="acc" data-subtype="socks" data-character-src="assets/PIC/acc/S1.png">
-        <img src="assets/PIC/acc/S2.png" alt="S 2" class="option" data-type="acc" data-subtype="socks" data-character-src="assets/PIC/acc/S2.png">
-        <img src="assets/PIC/acc/S3.png" alt="S 3" class="option" data-type="acc" data-subtype="socks" data-character-src="assets/PIC/acc/S3.png">
-        <img src="assets/PIC/acc/S4.png" alt="S 4" class="option" data-type="acc" data-subtype="socks" data-character-src="assets/PIC/acc/S4.png">
-        <img src="assets/PIC/acc/S5.png" alt="S 5" class="option" data-type="acc" data-subtype="socks" data-character-src="assets/PIC/acc/S5.png">
-        <img src="assets/PIC/acc/S6.png" alt="S 6" class="option" data-type="acc" data-subtype="socks" data-character-src="assets/PIC/acc/S6.png">
-        <img src="assets/PIC/acc/S7.png" alt="S 7" class="option" data-type="acc" data-subtype="socks" data-character-src="assets/PIC/acc/S7.png">
-    </div>
-</div>
-
-
-              <div class="sub-tab-content" id="etc">
-                    <div class="options">
-                        <img src="assets/PIC/acc/E1.png" alt="E 1" class="option" data-type="acc" data-subtype="etc" data-character-src="assets/PIC/acc/E1.png">
-                        <img src="assets/PIC/acc/E2.png" alt="E 2" class="option" data-type="acc" data-subtype="etc" data-character-src="assets/PIC/acc/E2.png">
-                        <img src="assets/PIC/acc/E3.png" alt="E 3" class="option" data-type="acc" data-subtype="etc" data-character-src="assets/PIC/acc/E3.png">
-                        <img src="assets/PIC/acc/E4.png" alt="E 4" class="option" data-type="acc" data-subtype="etc" data-character-src="assets/PIC/acc/E4.png">
-                        <img src="assets/PIC/acc/E5.png" alt="E 5" class="option" data-type="acc" data-subtype="etc" data-character-src="assets/PIC/acc/E5.png">
-                        <img src="assets/PIC/acc/E6.png" alt="E 6" class="option" data-type="acc" data-subtype="etc" data-character-src="assets/PIC/acc/E6.png">
-                        <img src="assets/PIC/acc/E7.png" alt="E 7" class="option" data-type="acc" data-subtype="etc" data-character-src="assets/PIC/acc/E7.png">
-                        <img src="assets/PIC/acc/T1.png" alt="Piercing 1" class="option" data-type="acc" data-subtype="etc" data-character-src="assets/PIC/acc/T1.png">
-                        <img src="assets/PIC/acc/UND1.png" alt="UND 1" class="option" data-type="acc" data-subtype="etc" data-character-src="assets/PIC/acc/UND1.png">
-
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="tab-content" id="shoe">
-                <div class='subtitle'>select shoes</div>
+            <div class="sub-tab-content active" id="sleeveless">
                 <div class="options">
-                    <img src="assets/1PIC/shoe/Shoe1.png" alt="Shoe 1" class="option" data-type="shoe" data-character-src="assets/PIC/shoe/Shoe1.png">
-                    <img src="assets/1PIC/shoe/Shoe2.png" alt="Shoe 2" class="option" data-type="shoe" data-character-src="assets/PIC/shoe/Shoe2.png">
-                    <img src="assets/1PIC/shoe/Shoe3.png" alt="Shoe 3" class="option" data-type="shoe" data-character-src="assets/PIC/shoe/Shoe3.png">
-                    <img src="assets/1PIC/shoe/Shoe4.png" alt="Shoe 4" class="option" data-type="shoe" data-character-src="assets/PIC/shoe/Shoe4.png">
-                    <img src="assets/1PIC/shoe/Shoe5.png" alt="Shoe 5" class="option" data-type="shoe" data-character-src="assets/PIC/shoe/Shoe5.png">
-                    <img src="assets/1PIC/shoe/Shoe6.png" alt="Shoe 6" class="option" data-type="shoe" data-character-src="assets/PIC/shoe/Shoe6.png">
-                    <img src="assets/1PIC/shoe/Shoe7.png" alt="Shoe 7" class="option" data-type="shoe" data-character-src="assets/PIC/shoe/Shoe7.png">
-                    <img src="assets/1PIC/shoe/Shoe8.png" alt="Shoe 8" class="option" data-type="shoe" data-character-src="assets/PIC/shoe/Shoe8.png">
-                    <img src="assets/1PIC/shoe/Shoe9.png" alt="Shoe 9" class="option" data-type="shoe" data-character-src="assets/PIC/shoe/Shoe9.png">
-                    <!-- 더 많은 shoe 옵션 -->
+                    <img src="assets/1PIC/top/top3.png" alt="Top 3" class="option" data-type="top" data-subtype="sleeveless" data-character-src="assets/PIC/top/top3.png">
+                    <img src="assets/1PIC/top/top7.png" alt="Top 7" class="option" data-type="top" data-subtype="sleeveless" data-character-src="assets/PIC/top/top7.png">
+                    <img src="assets/1PIC/top/top8.png" alt="Top 8" class="option" data-type="top" data-subtype="sleeveless" data-character-src="assets/PIC/top/top8.png">
+                    <img src="assets/1PIC/top/top14.png" alt="Top 14" class="option" data-type="top" data-subtype="sleeveless" data-character-src="assets/PIC/top/top14.png">
+                    <img src="assets/1PIC/top/top18.png" alt="Top 18" class="option" data-type="top" data-subtype="sleeveless" data-character-src="assets/PIC/top/top18.png">
+                    <img src="assets/1PIC/top/top19.png" alt="Top 19" class="option" data-type="top" data-subtype="sleeveless" data-character-src="assets/PIC/top/top19.png">
+                    <img src="assets/1PIC/top/top20.png" alt="Top 20" class="option" data-type="top" data-subtype="sleeveless" data-character-src="assets/PIC/top/top20.png">
+                    <img src="assets/1PIC/top/top21.png" alt="Top 21" class="option" data-type="top" data-subtype="sleeveless" data-character-src="assets/PIC/top/top21.png">
+                    <img src="assets/1PIC/top/top22.png" alt="Top 22" class="option" data-type="top" data-subtype="sleeveless" data-character-src="assets/PIC/top/top22.png">
+                </div>
+            </div>
+
+            <div class="sub-tab-content" id="halfsleeve">
+                <div class="options">
+                    <img src="assets/1PIC/top/top1.png" alt="Top 1" class="option" data-type="top" data-subtype="halfsleeve" data-character-src="assets/PIC/top/top1.png">
+                    <img src="assets/1PIC/top/top2.png" alt="Top 2" class="option" data-type="top" data-subtype="halfsleeve" data-character-src="assets/PIC/top/top2.png">
+                    <img src="assets/1PIC/top/top6.png" alt="Top 6" class="option" data-type="top" data-subtype="halfsleeve" data-character-src="assets/PIC/top/top6.png">
+                    <img src="assets/1PIC/top/top10.png" alt="Top 10" class="option" data-type="top" data-subtype="halfsleeve" data-character-src="assets/PIC/top/top10.png">
+                    <img src="assets/1PIC/top/top11.png" alt="Top 11" class="option" data-type="top" data-subtype="halfsleeve" data-character-src="assets/PIC/top/top11.png">
+                    <img src="assets/1PIC/top/top12.png" alt="Top 12" class="option" data-type="top" data-subtype="halfsleeve" data-character-src="assets/PIC/top/top12.png">
+                    <img src="assets/1PIC/top/top13.png" alt="Top 13" class="option" data-type="top" data-subtype="halfsleeve" data-character-src="assets/PIC/top/top13.png">
+                    <img src="assets/1PIC/top/top27.png" alt="Top 27" class="option" data-type="top" data-subtype="halfsleeve" data-character-src="assets/PIC/top/top27.png" data-description="This is a description for Top 27."> 
+                    <img src="assets/1PIC/top/miy2.png" alt="Miy 2" class="option" data-type="top" data-subtype="halfsleeve" data-character-src="assets/PIC/top/miy2.png" data-description="This is a description for Miy 2.">
+                    <img src="assets/1PIC/top/miy3.png" alt="Miy 3" class="option" data-type="top" data-subtype="halfsleeve" data-character-src="assets/PIC/top/miy3.png" data-description="This is a description for Miy 3.">
+                </div>
+            </div>
+
+            <div class="sub-tab-content" id="longsleeve">
+                <div class="options">
+                    <img src="assets/1PIC/top/top4.png" alt="Top 4" class="option" data-type="top" data-subtype="longsleeve" data-character-src="assets/PIC/top/top4.png">
+                    <img src="assets/1PIC/top/top15.png" alt="Top 15" class="option" data-type="top" data-subtype="longsleeve" data-character-src="assets/PIC/top/top15.png">
+                    <img src="assets/1PIC/top/top16.png" alt="Top 16" class="option" data-type="top" data-subtype="longsleeve" data-character-src="assets/PIC/top/top16.png">
+                    <img src="assets/1PIC/top/top17.png" alt="Top 17" class="option" data-type="top" data-subtype="longsleeve" data-character-src="assets/PIC/top/top17.png">
+                    <img src="assets/1PIC/top/ukr1.png" alt="Ukr 1" class="option" data-type="top" data-subtype="longsleeve" data-character-src="assets/PIC/top/ukr1.png" data-description="This is a description for Ukr 1.">
+                </div>
+            </div>
+
+            <div class="sub-tab-content" id="hooded">
+                <div class="options">
+                    <img src="assets/1PIC/top/top5.png" alt="Top 5" class="option" data-type="top" data-subtype="hooded" data-character-src="assets/PIC/top/top5.png">
+                    <img src="assets/1PIC/top/top23.png" alt="Top 23" class="option" data-type="top" data-subtype="hooded" data-character-src="assets/PIC/top/top23.png">
+                    <img src="assets/1PIC/top/top24.png" alt="Top 24" class="option" data-type="top" data-subtype="hooded" data-character-src="assets/PIC/top/top24.png">
+                    <img src="assets/1PIC/top/top25.png" alt="Top 25" class="option" data-type="top" data-subtype="hooded" data-character-src="assets/PIC/top/top25.png">
+                    <img src="assets/1PIC/top/top26.png" alt="Top 26" class="option" data-type="top" data-subtype="hooded" data-character-src="assets/PIC/top/top26.png">
+                </div>
+            </div>
+
+            <div class="sub-tab-content" id="onepiece">
+                <div class="options">
+                    <img src="assets/1PIC/top/viet1.png" alt="viet1" class="option" data-type="top" data-subtype="onepiece" data-character-src="assets/PIC/top/viet1.png" data-description="This is a description for Viet 1.">
+                    <img src="assets/1PIC/top/viet2.png" alt="viet2" class="option" data-type="top" data-subtype="onepiece" data-character-src="assets/PIC/top/viet2.png" data-description="This is a description for Viet 2.">
+                    <img src="assets/1PIC/top/ind1.png" alt="ind1" class="option" data-type="top" data-subtype="onepiece" data-character-src="assets/PIC/top/ind1.png" data-description="This is a description for Ind 1.">
+                    <img src="assets/1PIC/top/ind2.png" alt="ind2" class="option" data-type="top" data-subtype="onepiece" data-character-src="assets/PIC/top/ind2.png" data-description="This is a description for Ind 2.">
+                    <img src="assets/1PIC/top/ind3.png" alt="ind3" class="option" data-type="top" data-subtype="onepiece" data-character-src="assets/PIC/top/ind3.png" data-description="This is a description for Ind 3.">
+                    <img src="assets/1PIC/top/ind4.png" alt="ind4" class="option" data-type="top" data-subtype="onepiece" data-character-src="assets/PIC/top/ind4.png" data-description="This is a description for Ind 4.">
                 </div>
             </div>
         </div>
-        <div class='properties'>
-            <div class='subtitle'>properties (which country, culture, etc..)</div>
+
+        <div class="tab-content" id="bottom">
+            <div class="sub-tabs">
+                <button class="sub-tab-link active" data-subtab="skirt">Skirt</button>
+                <button class="sub-tab-link" data-subtab="pants">Pants</button>
+                <button class="sub-tab-link" data-subtab="shorts">Shorts</button>
+                <button class="sub-tab-link" data-subtab="leggings">Leggings</button>
+            </div>
+            <div class="sub-tab-content active" id="skirt">
+                <div class="options">
+                    <img src="assets/1PIC/bottom/S1.png" alt="Skirt 1" class="option" data-type="bottom" data-subtype="skirt" data-character-src="assets/PIC/bottom/S1.png">
+                    <img src="assets/1PIC/bottom/S2.png" alt="Skirt 2" class="option" data-type="bottom" data-subtype="skirt" data-character-src="assets/PIC/bottom/S2.png">
+                    <img src="assets/1PIC/bottom/S3.png" alt="Skirt 3" class="option" data-type="bottom" data-subtype="skirt" data-character-src="assets/PIC/bottom/S3.png">
+                    <img src="assets/1PIC/bottom/S4.png" alt="Skirt 4" class="option" data-type="bottom" data-subtype="skirt" data-character-src="assets/PIC/bottom/S4.png">
+                    <img src="assets/1PIC/bottom/S5.png" alt="Skirt 5" class="option" data-type="bottom" data-subtype="skirt" data-character-src="assets/PIC/bottom/S5.png">
+                    <img src="assets/1PIC/bottom/MIY1.png" alt="MIY 1" class="option" data-type="bottom" data-subtype="skirt" data-character-src="assets/PIC/bottom/MIY1.png" data-description="This is a description for Miy 1.">
+                    <img src="assets/1PIC/bottom/MIY2.png" alt="MIY 2" class="option" data-type="bottom" data-subtype="skirt" data-character-src="assets/PIC/bottom/MIY2.png" data-description="This is a description for Miy 2.">
+                    <img src="assets/1PIC/bottom/MIY3.png" alt="MIY 3" class="option" data-type="bottom" data-subtype="skirt" data-character-src="assets/PIC/bottom/MIY3.png" data-description="This is a description for Miy 3.">
+                    <img src="assets/1PIC/bottom/KELT1.png" alt="KELT 1" class="option" data-type="bottom" data-subtype="skirt" data-character-src="assets/PIC/bottom/KELT1.png" data-description="This is a description for Kelt 1.">
+                    <img src="assets/1PIC/bottom/KELT2.png" alt="KELT 2" class="option" data-type="bottom" data-subtype="skirt" data-character-src="assets/PIC/bottom/KELT2.png" data-description="This is a description for Kelt 2.">
+                    <!-- 더 많은 스커트 옵션 -->
+                </div>
+            </div>
+
+            <div class="sub-tab-content" id="pants">
+                <div class="options">
+                    <img src="assets/1PIC/bottom/P1.png" alt="Pants 1" class="option" data-type="bottom" data-subtype="pants" data-character-src="assets/PIC/bottom/P1.png">
+                    <img src="assets/1PIC/bottom/P2.png" alt="Pants 2" class="option" data-type="bottom" data-subtype="pants" data-character-src="assets/PIC/bottom/P2.png">
+                    <img src="assets/1PIC/bottom/P3.png" alt="Pants 3" class="option" data-type="bottom" data-subtype="pants" data-character-src="assets/PIC/bottom/P3.png">
+                </div>
+            </div>
+
+            <div class="sub-tab-content" id="shorts">
+                <div class="options">
+                    <img src="assets/1PIC/bottom/PS1.png" alt="Shorts 1" class="option" data-type="bottom" data-subtype="shorts" data-character-src="assets/PIC/bottom/PS1.png">
+                    <img src="assets/1PIC/bottom/PS2.png" alt="Shorts 2" class="option" data-type="bottom" data-subtype="shorts" data-character-src="assets/PIC/bottom/PS2.png">
+                    <img src="assets/1PIC/bottom/PS3.png" alt="Shorts 3" class="option" data-type="bottom" data-subtype="shorts" data-character-src="assets/PIC/bottom/PS3.png">
+                    <img src="assets/1PIC/bottom/PS4.png" alt="Shorts 4" class="option" data-type="bottom" data-subtype="shorts" data-character-src="assets/PIC/bottom/PS4.png">
+                    <img src="assets/1PIC/bottom/PS5.png" alt="Shorts 5" class="option" data-type="bottom" data-subtype="shorts" data-character-src="assets/PIC/bottom/PS5.png">
+                    <img src="assets/1PIC/bottom/PS6.png" alt="Shorts 6" class="option" data-type="bottom" data-subtype="shorts" data-character-src="assets/PIC/bottom/PS6.png">
+                </div>
+            </div>
+
+            <div class="sub-tab-content" id="leggings">
+                <div class="options">
+                    <img src="assets/1PIC/bottom/L2.png" alt="Leggings 2" class="option" data-type="bottom" data-subtype="leggings" data-character-src="assets/PIC/bottom/L2.png">
+                    <img src="assets/1PIC/bottom/L3.png" alt="Leggings 3" class="option" data-type="bottom" data-subtype="leggings" data-character-src="assets/PIC/bottom/L3.png">
+                    <img src="assets/1PIC/bottom/L4.png" alt="Leggings 4" class="option" data-type="bottom" data-subtype="leggings" data-character-src="assets/PIC/bottom/L4.png">
+                    <img src="assets/1PIC/bottom/L5.png" alt="Leggings 5" class="option" data-type="bottom" data-subtype="leggings" data-character-src="assets/PIC/bottom/L5.png">
+                    <img src="assets/1PIC/bottom/L6.png" alt="Leggings 6" class="option" data-type="bottom" data-subtype="leggings" data-character-src="assets/PIC/bottom/L6.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="outer">
+            <div class="sub-tabs">
+                <button class="sub-tab-link active" data-subtab="leather">Leather</button>
+                <button class="sub-tab-link" data-subtab="knit">Knit</button>
+                <button class="sub-tab-link" data-subtab="fur">Fur</button>
+                <button class="sub-tab-link" data-subtab="etc2">Etc</button>
+            </div>
+
+            <div class="sub-tab-content active" id="leather">
+                <div class="options">
+                    <img src="assets/1PIC/outer/outer3.png" alt="Outer 3" class="option" data-type="outer" data-subtype="leather" data-character-src="assets/PIC/outer/outer3.png">
+                    <img src="assets/1PIC/outer/outer18.png" alt="Outer 18" class="option" data-type="outer" data-subtype="leather" data-character-src="assets/PIC/outer/outer18.png">
+                    <img src="assets/1PIC/outer/outer19.png" alt="Outer 19" class="option" data-type="outer" data-subtype="leather" data-character-src="assets/PIC/outer/outer19.png">
+                </div>
+            </div>
+
+            <div class="sub-tab-content" id="fur">
+                <div class="options">
+                    <img src="assets/1PIC/outer/outer2.png" alt="Outer 2" class="option" data-type="outer" data-subtype="fur" data-character-src="assets/PIC/outer/outer2.png">
+                    <img src="assets/1PIC/outer/outer4.png" alt="Outer 4" class="option" data-type="outer" data-subtype="fur" data-character-src="assets/PIC/outer/outer4.png">
+                    <img src="assets/1PIC/outer/outer15.png" alt="Outer 15" class="option" data-type="outer" data-subtype="fur" data-character-src="assets/PIC/outer/outer15.png">
+                    <img src="assets/1PIC/outer/outer16.png" alt="Outer 16" class="option" data-type="outer" data-subtype="fur" data-character-src="assets/PIC/outer/outer16.png">
+                    <img src="assets/1PIC/outer/outer17.png" alt="Outer 17" class="option" data-type="outer" data-subtype="fur" data-character-src="assets/PIC/outer/outer17.png">
+                </div>
+            </div>
+
+            <div class="sub-tab-content" id="knit">
+                <div class="options">
+                    <img src="assets/1PIC/outer/outer1.png" alt="Outer 1" class="option" data-type="outer" data-subtype="knit" data-character-src="assets/PIC/outer/outer1.png">
+                    <img src="assets/1PIC/outer/outer5.png" alt="Outer 5" class="option" data-type="outer" data-subtype="knit" data-character-src="assets/PIC/outer/outer5.png">
+                    <img src="assets/1PIC/outer/outer7.png" alt="Outer 7" class="option" data-type="outer" data-subtype="knit" data-character-src="assets/PIC/outer/outer7.png">
+                    <img src="assets/1PIC/outer/outer8.png" alt="Outer 8" class="option" data-type="outer" data-subtype="knit" data-character-src="assets/PIC/outer/outer8.png">
+                    <img src="assets/1PIC/outer/outer9.png" alt="Outer 9" class="option" data-type="outer" data-subtype="knit" data-character-src="assets/PIC/outer/outer9.png">
+                    <img src="assets/1PIC/outer/outer10.png" alt="Outer 10" class="option" data-type="outer" data-subtype="knit" data-character-src="assets/PIC/outer/outer10.png">
+                    <img src="assets/1PIC/outer/outer11.png" alt="Outer 11" class="option" data-type="outer" data-subtype="knit" data-character-src="assets/PIC/outer/outer11.png">
+                    <img src="assets/1PIC/outer/outer12.png" alt="Outer 12" class="option" data-type="outer" data-subtype="knit" data-character-src="assets/PIC/outer/outer12.png">
+                    <img src="assets/1PIC/outer/outer13.png" alt="Outer 13" class="option" data-type="outer" data-subtype="knit" data-character-src="assets/PIC/outer/outer13.png">
+                    <img src="assets/1PIC/outer/outer14.png" alt="Outer 14" class="option" data-type="outer" data-subtype="knit" data-character-src="assets/PIC/outer/outer14.png">
+                </div>
+            </div>
+
+            <div class="sub-tab-content" id="etc2">
+                <div class="options">
+                    <img src="assets/1PIC/outer/outer6.png" alt="Outer 6" class="option" data-type="outer" data-subtype="etc2" data-character-src="assets/PIC/outer/outer6.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="acc">
+            <div class="sub-tabs">
+                <button class="sub-tab-link active" data-subtab="necklace">necklace</button>
+                <button class="sub-tab-link" data-subtab="ring/bracelet">ring/bracelet</button>
+                <button class="sub-tab-link" data-subtab="glasses">glasses</button>
+                <button class="sub-tab-link" data-subtab="bag">Bag</button>
+                <button class="sub-tab-link" data-subtab="hat">Hat</button>
+                <button class="sub-tab-link" data-subtab="socks">socks</button>  
+                <button class="sub-tab-link" data-subtab="etc">Etc</button>
+            </div>
+            <div class="sub-tab-content active" id="necklace">
+                <div class="options">
+                    <img src="assets/1PIC/acc/J1.png" alt="Acc 1" class="option" data-type="acc" data-subtype="necklace" data-character-src="assets/PIC/acc/J1.png">
+                    <img src="assets/1PIC/acc/J2.png" alt="Acc 2" class="option" data-type="acc" data-subtype="necklace" data-character-src="assets/PIC/acc/J2.png">
+                    <img src="assets/1PIC/acc/J3.png" alt="Acc 3" class="option" data-type="acc" data-subtype="necklace" data-character-src="assets/PIC/acc/J3.png">
+                    <img src="assets/1PIC/acc/J4.png" alt="Acc 4" class="option" data-type="acc" data-subtype="necklace" data-character-src="assets/PIC/acc/J4.png">
+                    <img src="assets/1PIC/acc/J5.png" alt="Acc 5" class="option" data-type="acc" data-subtype="necklace" data-character-src="assets/PIC/acc/J5.png">
+                    <img src="assets/1PIC/acc/J6.png" alt="Acc 6" class="option" data-type="acc" data-subtype="necklace" data-character-src="assets/PIC/acc/J6.png">
+                    <img src="assets/1PIC/acc/J7.png" alt="Acc 7" class="option" data-type="acc" data-subtype="necklace" data-character-src="assets/PIC/acc/J7.png">
+                    <img src="assets/1PIC/acc/J8.png" alt="Acc 8" class="option" data-type="acc" data-subtype="necklace" data-character-src="assets/PIC/acc/J8.png">
+                    <img src="assets/1PIC/acc/J9.png" alt="Acc 9" class="option" data-type="acc" data-subtype="necklace" data-character-src="assets/PIC/acc/J9.png" data-description="This is a description for J9.">
+                </div>
+            </div>
+
+            <div class="sub-tab-content" id="ring/bracelet">
+                <div class="options">
+                    <img src="assets/1PIC/acc/R1.png" alt="R 1" class="option" data-type="acc" data-subtype="ring/bracelet" data-character-src="assets/PIC/acc/R1.png">
+                    <img src="assets/1PIC/acc/R2.png" alt="R 2" class="option" data-type="acc" data-subtype="ring/bracelet" data-character-src="assets/PIC/acc/R2.png">
+                    <img src="assets/1PIC/acc/R3.png" alt="R 3" class="option" data-type="acc" data-subtype="ring/bracelet" data-character-src="assets/PIC/acc/R3.png">
+                    <img src="assets/1PIC/acc/R4.png" alt="R 4" class="option" data-type="acc" data-subtype="ring/bracelet" data-character-src="assets/PIC/acc/R4.png">
+                    <img src="assets/1PIC/acc/R5.png" alt="R 5" class="option" data-type="acc" data-subtype="ring/bracelet" data-character-src="assets/PIC/acc/R5.png">
+                </div>
+            </div>
+
+            <div class="sub-tab-content" id="glasses">
+                <div class="options">
+                    <img src="assets/1PIC/acc/G1.png" alt="G 1" class="option" data-type="acc" data-subtype="glasses" data-character-src="assets/PIC/acc/G1.png">
+                    <img src="assets/1PIC/acc/G1.1.png" alt="G 1.1" class="option" data-type="acc" data-subtype="glasses" data-character-src="assets/PIC/acc/G1.1.png">
+                    <img src="assets/1PIC/acc/G2.png" alt="G 2" class="option" data-type="acc" data-subtype="glasses" data-character-src="assets/PIC/acc/G2.png">
+                    <img src="assets/1PIC/acc/G3.png" alt="G 3" class="option" data-type="acc" data-subtype="glasses" data-character-src="assets/PIC/acc/G3.png">
+                    <img src="assets/1PIC/acc/G4.png" alt="G 4" class="option" data-type="acc" data-subtype="glasses" data-character-src="assets/PIC/acc/G4.png">
+                </div>
+            </div>
+
+            <div class="sub-tab-content" id="bag">
+                <div class="options">
+                    <img src="assets/1PIC/acc/B1.png" alt="B 1" class="option" data-type="acc" data-subtype="bag" data-character-src="assets/PIC/acc/B1.png">
+                    <img src="assets/1PIC/acc/B2.png" alt="B 2" class="option" data-type="acc" data-subtype="bag" data-character-src="assets/PIC/acc/B2.png">
+                    <img src="assets/1PIC/acc/B3.png" alt="B 3" class="option" data-type="acc" data-subtype="bag" data-character-src="assets/PIC/acc/B3.png">
+                </div>
+            </div>
+
+            <div class="sub-tab-content" id="hat">
+                <div class="options">
+                    <img src="assets/1PIC/acc/hat/Hat1.png" alt="Hat 1" class="option" data-type="acc" data-subtype="hat" data-character-src="assets/PIC/acc/hat/Hat1.png">
+                    <img src="assets/1PIC/acc/hat/Hat2.png" alt="Hat 2" class="option" data-type="acc" data-subtype="hat" data-character-src="assets/PIC/acc/hat/Hat2.png">
+                    <img src="assets/1PIC/acc/hat/Hat3.png" alt="Hat 3" class="option" data-type="acc" data-subtype="hat" data-character-src="assets/PIC/acc/hat/Hat3.png">
+                    <img src="assets/1PIC/acc/hat/Hat4.png" alt="Hat 4" class="option" data-type="acc" data-subtype="hat" data-character-src="assets/PIC/acc/hat/Hat4.png">
+                    <img src="assets/1PIC/acc/hat/MEX1.png" alt="MEX 1" class="option" data-type="acc" data-subtype="hat" data-character-src="assets/PIC/acc/hat/MEX1.png" data-description="This is a description for MEX 1.">
+                    <img src="assets/1PIC/acc/hat/MEX2.png" alt="MEX 2" class="option" data-type="acc" data-subtype="hat" data-character-src="assets/PIC/acc/hat/MEX2.png" data-description="This is a description for MEX 2.">
+                    <img src="assets/1PIC/acc/hat/MEX3.png" alt="MEX 3" class="option" data-type="acc" data-subtype="hat" data-character-src="assets/PIC/acc/hat/MEX3.png" data-description="This is a description for MEX 3.">
+                    <img src="assets/1PIC/acc/hat/VIET1.png" alt="VIET 1" class="option" data-type="acc" data-subtype="hat" data-character-src="assets/PIC/acc/hat/VIET1.png" data-description="This is a description for VIET 1.">
+                </div>
+            </div>
+
+            <div class="sub-tab-content" id="socks">
+                <div class="options">
+                    <img src="assets/1PIC/acc/S1.png" alt="S 1" class="option" data-type="acc" data-subtype="socks" data-character-src="assets/PIC/acc/S1.png">
+                    <img src="assets/1PIC/acc/S2.png" alt="S 2" class="option" data-type="acc" data-subtype="socks" data-character-src="assets/PIC/acc/S2.png">
+                    <img src="assets/1PIC/acc/S3.png" alt="S 3" class="option" data-type="acc" data-subtype="socks" data-character-src="assets/PIC/acc/S3.png">
+                    <img src="assets/1PIC/acc/S4.png" alt="S 4" class="option" data-type="acc" data-subtype="socks" data-character-src="assets/PIC/acc/S4.png">
+                    <img src="assets/1PIC/acc/S5.png" alt="S 5" class="option" data-type="acc" data-subtype="socks" data-character-src="assets/PIC/acc/S5.png">
+                    <img src="assets/1PIC/acc/S6.png" alt="S 6" class="option" data-type="acc" data-subtype="socks" data-character-src="assets/PIC/acc/S6.png">
+                    <img src="assets/1PIC/acc/S7.png" alt="S 7" class="option" data-type="acc" data-subtype="socks" data-character-src="assets/PIC/acc/S7.png">
+                </div>
+            </div>
+
+            <div class="sub-tab-content" id="etc">
+                <div class="options">
+                    <img src="assets/1PIC/acc/E1.png" alt="E 1" class="option" data-type="acc" data-subtype="etc" data-character-src="assets/PIC/acc/E1.png">
+                    <img src="assets/1PIC/acc/E2.png" alt="E 2" class="option" data-type="acc" data-subtype="etc" data-character-src="assets/PIC/acc/E2.png">
+                    <img src="assets/1PIC/acc/E3.png" alt="E 3" class="option" data-type="acc" data-subtype="etc" data-character-src="assets/PIC/acc/E3.png">
+                    <img src="assets/1PIC/acc/E4.png" alt="E 4" class="option" data-type="acc" data-subtype="etc" data-character-src="assets/PIC/acc/E4.png">
+                    <img src="assets/1PIC/acc/E5.png" alt="E 5" class="option" data-type="acc" data-subtype="etc" data-character-src="assets/PIC/acc/E5.png">
+                    <img src="assets/1PIC/acc/E6.png" alt="E 6" class="option" data-type="acc" data-subtype="etc" data-character-src="assets/PIC/acc/E6.png">
+                    <img src="assets/1PIC/acc/E7.png" alt="E 7" class="option" data-type="acc" data-subtype="etc" data-character-src="assets/PIC/acc/E7.png">
+                    <img src="assets/1PIC/acc/T1.png" alt="Piercing 1" class="option" data-type="acc" data-subtype="etc" data-character-src="assets/PIC/acc/T1.png">
+                    <img src="assets/1PIC/acc/UND1.png" alt="UND 1" class="option" data-type="acc" data-subtype="etc" data-character-src="assets/PIC/acc/UND1.png" data-description="This is a description for UND 1.">
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="shoe">
+            <div class='subtitle'>select shoes</div>
+            <div class="options">
+                <img src="assets/1PIC/shoe/Shoe1.png" alt="Shoe 1" class="option" data-type="shoe" data-character-src="assets/PIC/shoe/Shoe1.png">
+                <img src="assets/1PIC/shoe/Shoe2.png" alt="Shoe 2" class="option" data-type="shoe" data-character-src="assets/PIC/shoe/Shoe2.png">
+                <img src="assets/1PIC/shoe/Shoe3.png" alt="Shoe 3" class="option" data-type="shoe" data-character-src="assets/PIC/shoe/Shoe3.png">
+                <img src="assets/1PIC/shoe/Shoe4.png" alt="Shoe 4" class="option" data-type="shoe" data-character-src="assets/PIC/shoe/Shoe4.png">
+                <img src="assets/1PIC/shoe/Shoe5.png" alt="Shoe 5" class="option" data-type="shoe" data-character-src="assets/PIC/shoe/Shoe5.png">
+                <img src="assets/1PIC/shoe/Shoe6.png" alt="Shoe 6" class="option" data-type="shoe" data-character-src="assets/PIC/shoe/Shoe6.png">
+                <img src="assets/1PIC/shoe/Shoe7.png" alt="Shoe 7" class="option" data-type="shoe" data-character-src="assets/PIC/shoe/Shoe7.png">
+                <img src="assets/1PIC/shoe/Shoe8.png" alt="Shoe 8" class="option" data-type="shoe" data-character-src="assets/PIC/shoe/Shoe8.png">
+                <img src="assets/1PIC/shoe/Shoe9.png" alt="Shoe 9" class="option" data-type="shoe" data-character-src="assets/PIC/shoe/Shoe9.png">
+                <!-- 더 많은 shoe 옵션 -->
+            </div>
         </div>
     </div>
+    <div class='selecteditem'>
+        <div class='subtitle'>selected items</div>
+    </div>
 </div>
+
+<div id="description-box" class="description-box" style="display: none;">
+    <div id="description-content" class="description-content"></div>
+    <button id="close-button" class="close-button">Close</button>
+</div>
+
 <script type="text/javascript" src="assets/init.js"></script>
 
 </body>

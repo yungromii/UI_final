@@ -1,8 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+    console.log("JavaScript is loaded and running.");  // 확인용 로그 메시지
     const options = document.querySelectorAll('.option');
     const tabs = document.querySelectorAll('.tab-link');
     const tabContents = document.querySelectorAll('.tab-content');
     const mannequin = document.getElementById('mannequin');
+    const descriptionBox = document.getElementById('description-box');
+    const descriptionContent = document.getElementById('description-content');
+    const saveButton = document.getElementById('save-button');
+    const closeButton = document.getElementById('close-button');
     const selectedOptions = {}; // 각 탭별로 선택된 옵션을 저장할 객체
 
     const zIndexMap = {
@@ -36,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const subtype = this.dataset.subtype; // 하위 카테고리 가져오기
             const characterSrc = this.dataset.characterSrc;
             const tab = this.closest('.tab-content').id;
+            const description = this.getAttribute('data-description');
 
             // 하위 카테고리별로 선택된 옵션을 관리
             if (!selectedOptions[type]) {
@@ -70,7 +77,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 selectedOptions[type][subtype] = this;
                 changeCharacterAppearance(type, subtype, characterSrc);
             }
+
+            // 설명 박스를 표시
+            if (description) {
+                descriptionContent.innerHTML = description;
+                descriptionBox.style.display = 'block';
+            }
         });
+    });
+
+    closeButton.addEventListener('click', function() {
+        descriptionBox.style.display = 'none';
     });
 
     tabs.forEach(tab => {
@@ -93,6 +110,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     document.getElementById('reset-button').addEventListener('click', resetCharacter);
+
+    document.getElementById('save-button').addEventListener('click', function() {
+        console.log("Save button clicked");  // 저장 버튼 클릭 확인
+        html2canvas(document.querySelector('.character')).then(canvas => {
+            const link = document.createElement('a');
+            link.href = canvas.toDataURL();
+            link.download = 'character.png';
+            link.click();
+        });
+    });
 
     function changeCharacterAppearance(type, subtype, src) {
         let elementId = `character-${type}-${subtype}`;
