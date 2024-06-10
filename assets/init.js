@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         skirt: 11,
         pants: 10,
         leggings: 5,
+        socks: 6,
         shorts: 12,
         top: 6,
         onepiece: 13,
@@ -81,12 +82,14 @@ document.addEventListener('DOMContentLoaded', function() {
             // 설명 박스를 표시
             if (description) {
                 descriptionContent.innerHTML = description;
-                descriptionBox.style.display = 'block';
+                descriptionBox.classList.add('show'); // 애니메이션 클래스 추가
+                descriptionBox.style.display = 'block'; // 설명 박스를 표시
             }
         });
     });
 
     closeButton.addEventListener('click', function() {
+        descriptionBox.classList.remove('show'); // 애니메이션 클래스 제거
         descriptionBox.style.display = 'none';
     });
 

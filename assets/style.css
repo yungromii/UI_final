@@ -271,6 +271,24 @@ button {
     
 }
 
+/* assets/style.css 파일에 추가 */
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.description-box.show {
+    animation: scaleIn 0.5s forwards;
+}
+
+
 .description-content {
     white-space: pre-wrap;
 }
