@@ -203,7 +203,7 @@ body, html {
     border: 2px solid black;
     background: red;
     font-family: Karrik;
-    cursor: pointer;
+    cursor: pointer !important;
 }
 
 #save-button {
@@ -215,7 +215,7 @@ body, html {
     border: 2px solid black;
     background: red;
     font-family: Karrik;
-    cursor: pointer;
+    cursor: pointer !important;
 }
 
 
