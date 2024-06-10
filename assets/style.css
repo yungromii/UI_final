@@ -272,7 +272,7 @@ button {
     z-index: 1000;
     padding: 20px;
     overflow-y: auto;
-    
+    font-family: Karrik;
 }
 
 /* assets/style.css 파일에 추가 */
@@ -299,14 +299,16 @@ button {
 
 .close-button {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
+    font-size: 15px;
     padding: 5px 10px;
     background-color: #f44336;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: Karrik;
 }
 
 .close-button:hover {
