@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const descriptionContent = document.getElementById('description-content');
     const saveButton = document.getElementById('save-button');
     const closeButton = document.getElementById('close-button');
+
+
+
     const selectedOptions = {}; // 각 탭별로 선택된 옵션을 저장할 객체
 
     const zIndexMap = {
@@ -111,6 +114,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+
 
     document.getElementById('reset-button').addEventListener('click', resetCharacter);
 

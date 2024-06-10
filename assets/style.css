@@ -203,7 +203,9 @@ body, html {
     border: 2px solid black;
     background: red;
     font-family: Karrik;
-    cursor: pointer !important;
+    cursor: pointer;
+     z-index: 1000; /* 높은 z-index 값 추가 */
+    position: relative; /* z-index가 적용되도록 position 설정 */
 }
 
 #save-button {
@@ -215,7 +217,9 @@ body, html {
     border: 2px solid black;
     background: red;
     font-family: Karrik;
-    cursor: pointer !important;
+    cursor: pointer ;
+     z-index: 1000; /* 높은 z-index 값 추가 */
+    position: relative; /* z-index가 적용되도록 position 설정 */
 }
 
 
