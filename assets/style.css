@@ -27,7 +27,7 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
     transition: background 500ms ease;
-    
+    margin: 2%;
 }
 
 body, html {
@@ -41,21 +41,20 @@ body, html {
 .container {
     display: grid; 
     grid-template-columns: minmax(180px, auto) minmax(540px, auto) minmax(620px, auto);
-    margin: 2%;
-    
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .sidebar {
 }
 
 .left {
-    border: 1px solid black;
-    background-color: white;
-    border-radius: 20px;
-    padding: 20px;
-    overflow: auto;
+    position: relative;
+    z-index: 2000;
+   
+    
     transition: width 0.5s ease;
-    box-shadow: 10px 10px 0 black;
+    
 }
 
 .right {
@@ -195,8 +194,8 @@ body, html {
     font-weight: bold;
     margin-bottom: 3vh;
     font-family: Karrik;
-    width: 145px;
-    height: 145px;
+    width: 250px;
+    height: 400px;
     
 }
 
@@ -256,6 +255,7 @@ button {
     margin-bottom: 1.2em;
     font-weight: bold;
     font-family: Karrik;
+    background-color: white;
 }
 
 .guide {
@@ -337,6 +337,7 @@ button {
 
 .lace{
     margin-top: 25px;
+    margin-bottom: 25px;
     width: 100vw;
     height: auto;
 }
