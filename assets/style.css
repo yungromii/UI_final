@@ -42,7 +42,7 @@ body, html {
     display: grid; 
     grid-template-columns: minmax(180px, auto) minmax(540px, auto) minmax(620px, auto);
     margin: 3%;
-    height: 92vh;
+    
 }
 
 .sidebar {
@@ -68,7 +68,7 @@ body, html {
     flex-grow: 1;
     display: flex;
     justify-content: center;
-    height: 70vh;
+    
     padding: 15px;
     background: white;
     border: 2px solid black;
