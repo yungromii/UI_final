@@ -24,15 +24,19 @@
     src: url(fonts/Karrik-Regular.ttf);
 }
 
+button {
+    border: none; /* 테두리 제거 */
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
     transition: background 500ms ease;
-    margin: 2%;
+    
 }
 
 body, html {
     margin: 0;
-    padding: 0;
+    
     box-sizing: border-box;
     background-color: hotpink;
     overflow: auto;
@@ -41,20 +45,20 @@ body, html {
 .container {
     display: grid; 
     grid-template-columns: minmax(180px, auto) minmax(540px, auto) minmax(620px, auto);
-    margin-right: 20px;
-    margin-left: 20px;
+   padding: 20px;
+    margin-top: 20px;
+    width: 100%;
 }
 
 .sidebar {
 }
 
 .left {
-    position: relative;
-    z-index: 2000;
-   
-    
+   position: relative;
+   z-index: 2000;
+
     transition: width 0.5s ease;
-    
+
 }
 
 .right {
@@ -69,18 +73,19 @@ body, html {
     flex-grow: 1;
     display: flex;
     justify-content: center;
-   
     padding: 15px;
     background: white;
     border: 1px solid black;
     border-radius: 20px;
     overflow: hidden;
     align-items: center;
+    height: 600px;
 }
 
 .character img {
     width: 100%;
     height: 100%;
+
     object-fit: contain;
     position: absolute;
 }
@@ -190,41 +195,43 @@ body, html {
 }
 
 .logo {
-    font-size: 42px;
+    font-size: 36px;
     font-weight: bold;
-    margin-bottom: 3vh;
+ 
     font-family: Karrik;
     width: 250px;
-    height: 400px;
-    
+    height: auto;
+    object-fit: contain;
 }
 
 #reset-button {
     display: block;
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 1%;
     font-size: 36px;
-    border-radius: 18px;
-    border: 2px solid black;
+   color: white;
     background: red;
     font-family: Karrik;
     cursor: pointer;
      z-index: 1000; /* 높은 z-index 값 추가 */
     position: relative; /* z-index가 적용되도록 position 설정 */
+    
+    border: 1px solid black;
 }
 
 #save-button {
     display: block;
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 1%;
     font-size: 36px;
-    border-radius: 18px;
-    border: 2px solid black;
-    background: red;
+    color: red;
+    background: white;
     font-family: Karrik;
     cursor: pointer ;
      z-index: 1000; /* 높은 z-index 값 추가 */
     position: relative; /* z-index가 적용되도록 position 설정 */
+    
+    border: 1px solid black;
 }
 
 
@@ -245,9 +252,7 @@ body, html {
     margin-bottom: 2%;
 }
 
-button {
-    border: none; /* 테두리 제거 */
-}
+
 
 .subtitle {
     font-size: 24px;
@@ -275,7 +280,7 @@ button {
     border: 2px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
+    z-index: 8000;
     padding: 20px;
     overflow-y: auto;
     font-family: Karrik;
@@ -336,8 +341,8 @@ button {
 }
 
 .lace{
-    margin-top: 25px;
-    margin-bottom: 25px;
+   margin-top: 2%;
+    margin-bottom: 1%;
     width: 100vw;
     height: auto;
 }
