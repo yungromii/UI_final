@@ -27,7 +27,7 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
     transition: background 500ms ease;
-    background-color: hotpink;
+    
 }
 
 body, html {
@@ -41,7 +41,7 @@ body, html {
 .container {
     display: grid; 
     grid-template-columns: minmax(180px, auto) minmax(540px, auto) minmax(620px, auto);
-    margin: 3%;
+    margin: 2%;
     
 }
 
@@ -49,17 +49,19 @@ body, html {
 }
 
 .left {
-    background: white;
-    border: 2px solid black;
+    border: 1px solid black;
+    background-color: white;
     border-radius: 20px;
     padding: 20px;
     overflow: auto;
     transition: width 0.5s ease;
+    box-shadow: 10px 10px 0 black;
 }
 
 .right {
     display: flex;
     flex-direction: column;
+
 }
 
 .character {
@@ -68,10 +70,10 @@ body, html {
     flex-grow: 1;
     display: flex;
     justify-content: center;
-    
+   
     padding: 15px;
     background: white;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 20px;
     overflow: hidden;
     align-items: center;
@@ -121,8 +123,9 @@ body, html {
     padding: 25px 30px;
     background-color: white;
     overflow: auto;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 20px;
+    
 }
 
 .tab-link.active {
@@ -192,6 +195,9 @@ body, html {
     font-weight: bold;
     margin-bottom: 3vh;
     font-family: Karrik;
+    width: 145px;
+    height: 145px;
+    
 }
 
 #reset-button {
@@ -236,7 +242,7 @@ body, html {
 }
 
 .select {
-    box-shadow: 5px 5px 5px hotpink;
+    
     margin-bottom: 2%;
 }
 
@@ -327,5 +333,11 @@ button {
 .description-box p {
     margin-top: 5px;
     margin-bottom: 10px;
+}
+
+.lace{
+    margin-top: 25px;
+    width: 100vw;
+    height: auto;
 }
 
