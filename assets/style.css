@@ -64,7 +64,6 @@ body, html {
 .right {
     display: flex;
     flex-direction: column;
-
 }
 
 .character {
