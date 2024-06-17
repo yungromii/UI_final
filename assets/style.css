@@ -24,6 +24,17 @@
     src: url(fonts/Karrik-Regular.ttf);
 }
 
+@font-face {
+    font-family: Bebas;
+    src: url(fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: A1;
+    src: url(fonts/GothicA1-Regular.ttf);
+}
+
+
 button {
     border: none; /* 테두리 제거 */
 }
@@ -44,7 +55,7 @@ body, html {
 
 .container {
     display: grid; 
-    grid-template-columns: minmax(180px, auto) minmax(540px, auto) minmax(620px, auto);
+    grid-template-columns: minmax(160px, auto) minmax(540px, auto) minmax(620px, auto);
    padding: 20px;
     margin-top: 20px;
     width: 100%;
@@ -53,12 +64,15 @@ body, html {
 .sidebar {
 }
 
-.left {
-   position: relative;
-   z-index: 2000;
-
+.lefttext {
+  text-align: center;
+background: white;
+    border: 1px solid black;
+    border-radius: 20px;
     transition: width 0.5s ease;
-
+    box-shadow: 5px 5px 0 black;
+    position: relative;
+    z-index: 1900;
 }
 
 .right {
@@ -104,6 +118,7 @@ body, html {
     display: flex;
     flex-direction: row;
     justify-content: center;
+
 }
 
 .tab-link {
@@ -130,7 +145,8 @@ body, html {
     border: 1px solid black;
     border-radius: 20px;
     overflow: auto;
-    
+    box-shadow: -5px 5px 0 black;
+
 }
 
 .tab-link.active {
@@ -151,13 +167,13 @@ body, html {
 
 .sub-tab-link {
     background: white;
-    color: hotpink;
+    color: grey;
     padding: 1%;
     margin: 0 0.5%;
     cursor: pointer;
     font-family: Karrik;
     font-size: 18px;
-    border: 1px solid hotpink;
+    border: 1px solid grey;
 
 }
 
@@ -169,10 +185,11 @@ body, html {
     border-radius: 20px;
     margin-top: 10px;
     box-shadow: 5px 5px 5px grey;
+
 }
 
 .sub-tab-link.active {
-    background: hotpink;
+    background: grey;
     color: white;
 }
 
@@ -184,6 +201,9 @@ body, html {
     display: flex;
     flex-wrap: wrap;
     gap: 1vw;
+    align-items: center;
+    justify-content: center;
+   
 }
 
 .option {
@@ -195,43 +215,48 @@ body, html {
     margin: 10px;
 }
 
+p{
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+
 .logo {
-    font-size: 36px;
-    font-weight: bold;
+    font-size: 18px;
+    padding: 20px;
  
     font-family: Karrik;
-    width: 250px;
-    height: auto;
-    object-fit: contain;
+  
 }
 
 #reset-button {
     display: block;
-    margin: 10px auto;
+    margin: 5px auto;
     padding: 1%;
-    font-size: 36px;
+    font-size: 24px;
+    width: 100px;
    color: white;
     background: red;
     font-family: Karrik;
     cursor: pointer;
      z-index: 1000; /* 높은 z-index 값 추가 */
     position: relative; /* z-index가 적용되도록 position 설정 */
-    
+   
     border: 1px solid black;
 }
 
 #save-button {
+    width: 100px;
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
     padding: 1%;
-    font-size: 36px;
-    color: red;
-    background: white;
+    font-size: 24px;
+    color: black;
+    background: yellow;
     font-family: Karrik;
     cursor: pointer ;
      z-index: 1000; /* 높은 z-index 값 추가 */
     position: relative; /* z-index가 적용되도록 position 설정 */
-    
+   
     border: 1px solid black;
 }
 
@@ -342,9 +367,42 @@ body, html {
 }
 
 .lace{
-   margin-top: 2%;
-    margin-bottom: 1%;
+
+   padding: 20px;
     width: 100vw;
     height: auto;
+}
+
+#outfit{
+    top: -40px;
+    left: -20px;
+    object-fit: contain;
+    width: 270px;
+    height: auto;
+    position: relative;
+    z-index: 2000;
+    margin-bottom: -70px;
+}
+
+#myname{
+    position: absolute;
+top: 25px;
+ left: 25px;
+ font-family: Karrik;
+ font-size: 14px;
+ color: white;
+}
+
+#myname2{
+    position: absolute;
+ top: 25px;
+ right: 25px;
+ font-family: Karrik;
+ font-size: 14px;
+ color: white;
+}
+
+#toplogo{
+    position: relative;
 }
 
