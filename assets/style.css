@@ -55,7 +55,7 @@ body, html {
 
 .container {
     display: grid; 
-    grid-template-columns: minmax(160px, auto) minmax(540px, auto) minmax(620px, auto);
+    grid-template-columns: minmax(180px, auto) minmax(540px, auto) minmax(620px, auto);
    padding: 20px;
     margin-top: 20px;
     width: 100%;
@@ -73,6 +73,7 @@ background: white;
     box-shadow: 5px 5px 0 black;
     position: relative;
     z-index: 1900;
+    padding-block: 20px;
 }
 
 .right {
@@ -94,6 +95,7 @@ background: white;
     width: 100%;
     aspect-ratio: 1 /1;
     box-sizing: border-box;
+    box-shadow: 0 5px 0 black;
 }
 
 .character img {
@@ -122,9 +124,10 @@ background: white;
 }
 
 .tab-link {
-    background: white;
+    background: #FFA9EB;
     text-align: center;
     color: hotpink;
+
     padding: 1%;
     margin: 0 0.5%;
     cursor: pointer;
@@ -150,9 +153,10 @@ background: white;
 }
 
 .tab-link.active {
-    background: red;
-    color: white; /* Active tab background color */
+    background: white;
+    color: black; /* Active tab background color */
     text-decoration: underline;
+    border: 1px solid black;
 }
 
 .tab-content.active {
@@ -167,13 +171,13 @@ background: white;
 
 .sub-tab-link {
     background: white;
-    color: grey;
+    color: hotpink;
     padding: 1%;
     margin: 0 0.5%;
     cursor: pointer;
     font-family: Karrik;
     font-size: 18px;
-    border: 1px solid grey;
+    border: 1px solid hotpink;
 
 }
 
@@ -184,12 +188,12 @@ background: white;
     border: 1px solid black;
     border-radius: 20px;
     margin-top: 10px;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 3px 3px 5px grey;
 
 }
 
 .sub-tab-link.active {
-    background: grey;
+    background: hotpink;
     color: white;
 }
 
@@ -203,7 +207,7 @@ background: white;
     gap: 1vw;
     align-items: center;
     justify-content: center;
-   
+
 }
 
 .option {
@@ -213,16 +217,17 @@ background: white;
     border: 1px solid black;
     cursor: pointer;
     margin: 10px;
+    
 }
 
 p{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 19px;
 }
 
 .logo {
     font-size: 18px;
-    padding: 20px;
+    padding: 15px;
  
     font-family: Karrik;
   
@@ -247,11 +252,11 @@ p{
 #save-button {
     width: 100px;
     display: block;
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 1%;
     font-size: 24px;
-    color: black;
-    background: yellow;
+    color: white;
+    background: hotpink;
     font-family: Karrik;
     cursor: pointer ;
      z-index: 1000; /* 높은 z-index 값 추가 */
@@ -259,6 +264,15 @@ p{
    
     border: 1px solid black;
 }
+
+#save-button.hover{
+    background: hotpink;
+}
+
+#reset-button.hover{
+    background: hotpink;
+}
+
 
 
 .option.selected {
