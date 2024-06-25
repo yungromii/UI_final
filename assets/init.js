@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         hair: 20,
         bottom: 4,
         skirt: 11,
-        pants: 10,
+        pants: 5,
         leggings: 5,
         socks: 6,
         shorts: 12,
