@@ -422,3 +422,8 @@ top: 25px;
     height: 60px;
 }
 
+.description-box img {
+  width: auto; /* 원하는 너비로 설정 */
+  height: 400px; /* 높이는 비율에 맞춰 자동 조절 */
+  object-fit: cover; /* 이미지 비율을 유지하면서 박스에 맞추기 */
+}
