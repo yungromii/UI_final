@@ -55,7 +55,7 @@ body, html {
 
 .container {
     display: grid; 
-    grid-template-columns: minmax(180px, auto) minmax(540px, auto) minmax(620px, auto);
+    grid-template-columns: minmax(180px, auto) minmax(540px, auto) minmax(660px, auto);
    padding: 20px;
     margin-top: 20px;
     width: 100%;
