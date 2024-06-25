@@ -434,4 +434,20 @@ top: 25px;
   width: auto; /* 원하는 너비로 설정 */
   height: 400px; /* 높이는 비율에 맞춰 자동 조절 */
   object-fit: cover; /* 이미지 비율을 유지하면서 박스에 맞추기 */
+ 
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+a{
+    font-size: 20px;
+    
+    margin-left: 20px;
+}
+
+a: hover {
+    background-color: blue;
+    color: white;
 }
