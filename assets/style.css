@@ -420,6 +420,14 @@ top: 25px;
     position: relative;
     width: auto;
     height: 60px;
+    
+}
+
+.lace {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 수평 방향 중앙 정렬 */
+  text-align: center;
 }
 
 .description-box img {
