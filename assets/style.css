@@ -454,3 +454,36 @@ a: hover {
     background-color: blue;
     color: white;
 }
+
+@media screen and (max-width: 1400px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* 요소 간 간격 조정 */
+  }
+
+  .sidebar.left,
+  .sidebar.right {
+    width: 90%; /* 좌우 사이드바의 너비를 줄임 */
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .character {
+    width: 90%; /* 캐릭터 영역의 너비를 조정 */
+    aspect-ratio: 1 / 1; /* 정사각형 유지 */
+  }
+
+  .sidebar.right {
+    order: 3; /* 우측 사이드바를 마지막으로 배치 */
+  }
+
+  .character {
+    order: 2; /* 캐릭터를 가운데 배치 */
+  }
+
+  .sidebar.left {
+    order: 1; /* 좌측 사이드바를 첫 번째 배치 */
+  }
+}
