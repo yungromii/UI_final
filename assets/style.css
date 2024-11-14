@@ -80,6 +80,7 @@ background: white;
 .right {
     display: flex;
     flex-direction: column;
+
 }
 
 .character {
@@ -134,7 +135,7 @@ background: white;
     cursor: pointer;
     font-family: Karrik;
     font-size: 21px;
-    
+    overflow: auto;
 }
 
 .tab-link:hover {
@@ -455,35 +456,36 @@ a: hover {
     color: white;
 }
 
+
+
+
+/* 반응형 레이아웃: 1400픽셀 이하 */
 @media screen and (max-width: 1400px) {
   .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px; /* 요소 간 간격 조정 */
-  }
-
-  .sidebar.left,
-  .sidebar.right {
-    width: 90%; /* 좌우 사이드바의 너비를 줄임 */
-    max-width: 400px;
-    margin: 0 auto;
-  }
-
-  .character {
-    width: 90%; /* 캐릭터 영역의 너비를 조정 */
-    aspect-ratio: 1 / 1; /* 정사각형 유지 */
-  }
-
-  .sidebar.right {
-    order: 3; /* 우측 사이드바를 마지막으로 배치 */
-  }
-
-  .character {
-    order: 2; /* 캐릭터를 가운데 배치 */
+    display: grid;
+    grid-template-areas:
+      "left right"
+      "character right"; /* left 아래 character, right는 독립적 */
+    grid-template-columns: 2fr 1fr; /* left+character 1열, right는 고정 */
+    gap: 20px;
   }
 
   .sidebar.left {
-    order: 1; /* 좌측 사이드바를 첫 번째 배치 */
+    grid-area: left; /* 왼쪽 상단 */
   }
+
+  .character {
+    grid-area: character; /* 왼쪽 하단 */
+    width: 100%; /* 너비 조정 */
+    aspect-ratio: 1; /* 정사각형 비율 */
+  }
+
+  .sidebar.right {
+    grid-area: right; /* 오른쪽 단독 */
+    justify-self: center; /* 중앙 정렬 */
+  }
+
+  tab-link{
+    font-size: 18px;
+}
 }
