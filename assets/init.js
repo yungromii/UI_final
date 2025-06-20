@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             // base, acc, bottom은 중복 선택 가능, 나머지는 불가능
-            if (type === 'base' || type === 'acc' || type === 'bottom' type === 'hair' ||) {
+            if (type === 'base' || type === 'acc' || type === 'bottom' || type === 'hair' ) {
                 // 같은 하위 카테고리 내에서 중복 선택 방지
                 if (selectedOptions[type][subtype] === this) {
                     selectedOptions[type][subtype].classList.remove('selected');
