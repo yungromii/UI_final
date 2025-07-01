@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
         bag: 23,
         hat: 24,
         etc: 25,
+
     };
 
     options.forEach(option => {
